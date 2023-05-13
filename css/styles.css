@@ -422,7 +422,7 @@ body {
   padding-bottom: 120px;
 }
 
-/* ==============BUTTONS LIST =============*/
+/* ================BUTTONS LIST =============*/
 .buttons-list {
   display: flex;
   gap: 24px;
@@ -469,7 +469,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* project card */
+/* =====================PROJECT CARD====================================== */
 
 .projects-list {
   display: flex;
