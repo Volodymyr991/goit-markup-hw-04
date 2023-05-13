@@ -83,6 +83,8 @@ body {
   padding-bottom: 24px;
   box-sizing: border-box;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -143,16 +145,14 @@ body {
 
 /* ================ HERO ========== */
 
-/* .hero-section {
+.hero-section {
   background-color: var(--theme-color);
   padding-top: 188px;
   padding-bottom: 188px;
-} */
-
-.hero-container {
-  background-color: var(--theme-color);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -161,6 +161,7 @@ body {
     url(../images/background-image/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .main-title {
@@ -202,6 +203,12 @@ body {
 .advantages-section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.advantages-section-container {
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .advantages-icon {
@@ -286,7 +293,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 
 .title-card {
@@ -320,11 +327,20 @@ body {
   fill: #f4f4fd;
 }
 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
+}
+
 /* ============================CUSTOMERS============================ */
 
 .customers-section {
-  margin-top: 120px;
-  margin-bottom: 104px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.title-customers-sections {
+  margin-bottom: 72px;
 }
 
 .customers-list {
@@ -339,12 +355,26 @@ body {
   align-items: center;
   width: 168px;
   height: 88px;
+  color: currentColor;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  fill: #8e8f99;
+  color: #8e8f99;
 }
 
-.customers-link:hover,
+.customers-link-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover .customers-link-icon,
+.customers-link:focus .customers-link-icon {
+  fill: #404bbf;
+}
+
+.customers-link:hover {
+  fill: #404bbf;
+  border-color: #404bbf;
+}
+
 .customers-link:focus {
   fill: #404bbf;
   border-color: #404bbf;
@@ -360,7 +390,7 @@ body {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -380,6 +410,7 @@ body {
 .footer-description {
   width: 264px;
   height: 112px;
+  margin-right: 120px;
 }
 
 .text-footer-social {
@@ -430,13 +461,6 @@ body {
   margin-bottom: 72px;
 }
 
-.buttons-list-item:hover,
-.buttons-list-item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
 .button-filtr {
   min-width: min-content;
   padding: 12px 24px;
@@ -458,6 +482,9 @@ body {
   border: 1px solid transparent;
   background-color: #404bbf;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .title-project {
@@ -470,6 +497,10 @@ body {
 }
 
 /* =====================PROJECT CARD====================================== */
+
+.portfolio-pic {
+  display: block;
+}
 
 .projects-list {
   display: flex;
@@ -489,7 +520,8 @@ body {
   border-top: none;
 }
 
-.item-card:hover {
+.portfolio-pic:hover,
+.portfolio-pic:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
