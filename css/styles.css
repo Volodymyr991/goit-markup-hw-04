@@ -143,10 +143,24 @@ body {
 
 /* ================ HERO ========== */
 
-.hero-section {
+/* .hero-section {
   background-color: var(--theme-color);
   padding-top: 188px;
   padding-bottom: 188px;
+} */
+
+.hero-container {
+  background-color: var(--theme-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background-image/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-title {
@@ -188,6 +202,13 @@ body {
 .advantages-section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
 }
 
 .advantages-list {
@@ -275,12 +296,57 @@ body {
 
 .text-card {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team {
   background-color: #f4f4fd;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+}
+
+/* ============================CUSTOMERS============================ */
+
+.customers-section {
+  margin-top: 120px;
+  margin-bottom: 104px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+/* .customers-list-link:hover,
+.customers-list-link:focus {
+  fill: #404bbf;
+} */
 /*====================== FOOTER======================= */
 
 .footer {
