@@ -341,6 +341,10 @@ body {
   padding-bottom: 120px;
 }
 
+.title-sections-customers {
+  margin-bottom: 72px;
+}
+
 .customers-list {
   display: flex;
   justify-content: center;
