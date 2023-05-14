@@ -233,10 +233,9 @@ body {
 
 .title-sections {
   max-width: max-content;
-  margin: 0 auto 72px auto;
-  /* margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px; */
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -342,7 +341,16 @@ body {
 }
 
 .title-sections-customers {
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 .customers-list {
