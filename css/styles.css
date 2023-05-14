@@ -343,8 +343,14 @@ body {
 }
 
 .title-customers-sections {
-  line-height: 1.1;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   margin-bottom: 72px;
+  text-transform: capitalize;
 }
 
 .customers-list {
@@ -365,22 +371,18 @@ body {
   color: #8e8f99;
 }
 
-.customers-link:hover .customers-link-icon {
-  fill: #404bbf;
-}
-
-.customers-link:focus .customers-link-icon {
-  fill: #404bbf;
-}
-
 .customers-link:hover {
-  fill: #404bbf;
+  color: #404bbf;
   border-color: #404bbf;
 }
 
 .customers-link:focus {
-  fill: #404bbf;
+  color: #404bbf;
   border-color: #404bbf;
+}
+
+.customers-link-icon {
+  fill: currentColor;
 }
 
 /*====================== FOOTER======================= */
