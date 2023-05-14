@@ -95,14 +95,12 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  /* column-gap: 76px; */
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* column-gap: 40px; */
 }
 
 .address-list {
@@ -235,12 +233,12 @@ body {
 
 .title-sections {
   max-width: max-content;
-  margin-left: auto;
+  margin: 0 auto 72px auto;
+  /* margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
+  margin-bottom: 72px; */
   font-weight: 700;
   font-size: 36px;
-  /* line-height: 1.11; */
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -342,17 +340,6 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
-/* .title-customers-sections {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 72px;
-  text-transform: capitalize;
-} */
 
 .customers-list {
   display: flex;
@@ -506,6 +493,8 @@ body {
 
 .portfolio-link {
   display: block;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .projects-list {
@@ -522,19 +511,10 @@ body {
 
 .text-card-portfolio {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
-.item-card:hover .portfolio-link,
-.item-card:focus .portfolio-link {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
-
-/* .portfolio-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
